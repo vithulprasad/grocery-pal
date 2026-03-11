@@ -7,8 +7,6 @@ import { ArrowLeft, Check } from 'lucide-react';
 import { toast } from 'sonner';
 import { emitSocketEvent, socketEvents } from '@/socket/socket';
 
-
-
 const BasketDetails = () => {
   const { id } = useParams<{ id: string }>();
   const { baskets, toggleBasketItem, updateBasketStatus } = useAppStore();
